@@ -186,42 +186,42 @@ const CareerQuiz = () => {
     return (
       <div className="min-h-screen bg-gradient-to-br from-indigo-50 to-purple-50 p-4">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-xl p-8">
+          <div className="bg-white rounded-2xl shadow-xl p-4 sm:p-8">
             <div className="text-center mb-12">
               <div className="flex justify-center mb-6">
-                <Briefcase className="w-16 h-16 text-indigo-600" />
+                <Briefcase className="w-12 h-12 sm:w-16 sm:h-16 text-indigo-600" />
               </div>
-              <h1 className="text-4xl font-bold text-gray-800 mb-4">
-                Descobra Sua Área Ideal em Tech
+              <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">
+                Descubra Sua Área Ideal em Tech
               </h1>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
                 Escolha o tipo de avaliação que melhor se adapta ao seu perfil e
                 descubra qual área da tecnologia combina mais com você.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto">
               {/* Quiz Técnico */}
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 border-2 border-blue-200 hover:border-blue-300 transition-all duration-300 hover:shadow-lg">
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 sm:p-8 border-2 border-blue-200 hover:border-blue-300 transition-all duration-300 hover:shadow-lg">
                 <div className="flex items-center mb-6">
-                  <Code className="w-12 h-12 text-blue-600 mr-4" />
+                  <Code className="w-10 h-10 sm:w-12 sm:h-12 text-blue-600 mr-4" />
                   <div>
-                    <h2 className="text-2xl font-bold text-gray-800">
+                    <h2 className="text-xl sm:text-2xl font-bold text-gray-800">
                       Avaliação Técnica
                     </h2>
-                    <p className="text-blue-600 font-medium">
+                    <p className="text-blue-600 font-medium text-sm sm:text-base">
                       Foco em habilidades e preferências técnicas
                     </p>
                   </div>
                 </div>
 
                 <div className="mb-6">
-                  <p className="text-gray-700 mb-4">
+                  <p className="text-gray-700 mb-4 text-sm sm:text-base">
                     Esta avaliação foca nas suas preferências técnicas,
                     linguagens de programação, ferramentas e metodologias que
                     você mais se identifica.
                   </p>
-                  <div className="space-y-2">
+                  <div className="space-y-2 text-sm sm:text-base">
                     <div className="flex items-center text-sm text-gray-600">
                       <div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
                       Linguagens de programação favoritas
@@ -239,7 +239,7 @@ const CareerQuiz = () => {
 
                 <button
                   onClick={() => startQuiz("tech")}
-                  className="w-full bg-blue-600 text-white py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transition-colors flex items-center justify-center group"
+                  className="w-full bg-blue-600 text-white py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:bg-blue-700 transition-colors flex items-center justify-center group"
                 >
                   Começar Avaliação Técnica
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -247,26 +247,26 @@ const CareerQuiz = () => {
               </div>
 
               {/* Quiz Social */}
-              <div className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl p-8 border-2 border-pink-200 hover:border-pink-300 transition-all duration-300 hover:shadow-lg">
+              <div className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl p-6 sm:p-8 border-2 border-pink-200 hover:border-pink-300 transition-all duration-300 hover:shadow-lg">
                 <div className="flex items-center mb-6">
-                  <Heart className="w-12 h-12 text-pink-600 mr-4" />
+                  <Heart className="w-10 h-10 sm:w-12 sm:h-12 text-pink-600 mr-4" />
                   <div>
-                    <h2 className="text-2xl font-bold text-gray-800">
+                    <h2 className="text-xl sm:text-2xl font-bold text-gray-800">
                       Avaliação Social
                     </h2>
-                    <p className="text-pink-600 font-medium">
+                    <p className="text-pink-600 font-medium text-sm sm:text-base">
                       Foco em soft skills e trabalho em equipe
                     </p>
                   </div>
                 </div>
 
                 <div className="mb-6">
-                  <p className="text-gray-700 mb-4">
+                  <p className="text-gray-700 mb-4 text-sm sm:text-base">
                     Esta avaliação analisa suas habilidades sociais, forma de
                     trabalhar em equipe e como você se relaciona com diferentes
                     tipos de projetos.
                   </p>
-                  <div className="space-y-2">
+                  <div className="space-y-2 text-sm sm:text-base">
                     <div className="flex items-center text-sm text-gray-600">
                       <div className="w-2 h-2 bg-pink-500 rounded-full mr-2"></div>
                       Estilo de comunicação
@@ -284,7 +284,7 @@ const CareerQuiz = () => {
 
                 <button
                   onClick={() => startQuiz("social")}
-                  className="w-full bg-pink-600 text-white py-4 rounded-lg font-semibold text-lg hover:bg-pink-700 transition-colors flex items-center justify-center group"
+                  className="w-full bg-pink-600 text-white py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:bg-pink-700 transition-colors flex items-center justify-center group"
                 >
                   Começar Avaliação Social
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -292,8 +292,8 @@ const CareerQuiz = () => {
               </div>
             </div>
 
-            <div className="mt-12 text-center">
-              <p className="text-gray-500 text-sm">
+            <div className="mt-8 sm:mt-12 text-center">
+              <p className="text-gray-500 text-xs sm:text-sm">
                 💡 Dica: Você pode fazer ambas as avaliações para ter uma visão
                 mais completa do seu perfil profissional
               </p>
@@ -315,62 +315,68 @@ const CareerQuiz = () => {
     return (
       <div className="min-h-screen bg-gradient-to-br from-indigo-50 to-purple-50 p-4">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-xl p-8">
+          <div className="bg-white rounded-2xl shadow-xl p-4 sm:p-8">
             <div className="text-center mb-8">
               <div className="flex justify-center mb-4">
-                <Award className="w-16 h-16 text-yellow-500" />
+                <Award className="w-12 h-12 sm:w-16 sm:h-16 text-yellow-500" />
               </div>
-              <h1 className="text-3xl font-bold text-gray-800 mb-2">
+              <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-2">
                 Resultado da Sua Avaliação{" "}
                 {selectedQuiz === "tech" ? "Técnica" : "Social"}
               </h1>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-sm sm:text-base">
                 Com base nas suas respostas, identificamos sua área ideal!
               </p>
             </div>
 
-            <div className={`rounded-xl p-6 border-2 ${result.color} mb-8`}>
+            <div
+              className={`rounded-xl p-4 sm:p-6 border-2 ${result.color} mb-8`}
+            >
               <div className="flex items-center mb-4">
                 {result.icon}
-                <h2 className="text-2xl font-bold ml-3 text-gray-800">
+                <h2 className="text-xl sm:text-2xl font-bold ml-3 text-gray-800">
                   {result.name}
                 </h2>
               </div>
 
-              <p className="text-gray-700 mb-6 text-lg leading-relaxed">
+              <p className="text-gray-700 mb-6 text-base sm:text-lg leading-relaxed">
                 {result.description}
               </p>
 
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white p-4 rounded-lg shadow-sm">
-                  <h3 className="font-semibold text-gray-800 mb-2 flex items-center">
-                    <Code className="w-5 h-5 mr-2" />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+                <div className="bg-white p-3 sm:p-4 rounded-lg shadow-sm">
+                  <h3 className="font-semibold text-gray-800 mb-2 flex items-center text-base sm:text-lg">
+                    <Code className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                     Tecnologias Principais
                   </h3>
-                  <p className="text-gray-600">{result.skills}</p>
+                  <p className="text-gray-600 text-sm sm:text-base">
+                    {result.skills}
+                  </p>
                 </div>
 
-                <div className="bg-white p-4 rounded-lg shadow-sm">
-                  <h3 className="font-semibold text-gray-800 mb-2 flex items-center">
-                    <Users className="w-5 h-5 mr-2" />
+                <div className="bg-white p-3 sm:p-4 rounded-lg shadow-sm">
+                  <h3 className="font-semibold text-gray-800 mb-2 flex items-center text-base sm:text-lg">
+                    <Users className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                     Perspectivas de Carreira
                   </h3>
-                  <p className="text-gray-600">{result.career}</p>
+                  <p className="text-gray-600 text-sm sm:text-base">
+                    {result.career}
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-6 mb-8">
-              <h3 className="font-semibold text-gray-800 mb-4">
+            <div className="bg-gray-50 rounded-xl p-4 sm:p-6 mb-8">
+              <h3 className="font-semibold text-gray-800 mb-4 text-base sm:text-lg">
                 Sua Pontuação por Área:
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {Object.entries(scores).map(([area, score]) => (
                   <div key={area} className="text-center">
-                    <div className="text-2xl font-bold text-indigo-600">
+                    <div className="text-xl sm:text-2xl font-bold text-indigo-600">
                       {score || 0}
                     </div>
-                    <div className="text-sm text-gray-600 capitalize">
+                    <div className="text-xs sm:text-sm text-gray-600 capitalize">
                       {areas[area as keyof typeof areas].name.split(" ")[0]}
                     </div>
                   </div>
@@ -378,10 +384,10 @@ const CareerQuiz = () => {
               </div>
             </div>
 
-            <div className="flex justify-center space-x-4">
+            <div className="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4">
               <button
                 onClick={resetQuiz}
-                className="bg-gray-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors"
+                className="bg-gray-600 text-white px-6 py-2 sm:px-8 sm:py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors text-base sm:text-lg"
               >
                 Voltar ao Início
               </button>
@@ -389,7 +395,7 @@ const CareerQuiz = () => {
                 onClick={() =>
                   startQuiz(selectedQuiz === "tech" ? "social" : "tech")
                 }
-                className="bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors"
+                className="bg-indigo-600 text-white px-6 py-2 sm:px-8 sm:py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors text-base sm:text-lg"
               >
                 Fazer Avaliação {selectedQuiz === "tech" ? "Social" : "Técnica"}
               </button>
@@ -403,16 +409,16 @@ const CareerQuiz = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 to-purple-50 p-4">
       <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-2xl shadow-xl p-8">
+        <div className="bg-white rounded-2xl shadow-xl p-4 sm:p-8">
           <div className="mb-8">
             <div className="flex justify-between items-center mb-6">
               <div className="flex items-center">
                 {selectedQuiz === "tech" ? (
-                  <Code className="w-8 h-8 text-blue-600 mr-3" />
+                  <Code className="w-7 h-7 sm:w-8 sm:h-8 text-blue-600 mr-3" />
                 ) : (
-                  <Heart className="w-8 h-8 text-pink-600 mr-3" />
+                  <Heart className="w-7 h-7 sm:w-8 sm:h-8 text-pink-600 mr-3" />
                 )}
-                <h1 className="text-2xl font-bold text-gray-800">
+                <h1 className="text-xl sm:text-2xl font-bold text-gray-800">
                   Avaliação {selectedQuiz === "tech" ? "Técnica" : "Social"}
                 </h1>
               </div>
@@ -436,7 +442,7 @@ const CareerQuiz = () => {
           </div>
 
           <div className="mb-8">
-            <h2 className="text-xl font-semibold text-gray-800 mb-6">
+            <h2 className="text-lg sm:text-xl font-semibold text-gray-800 mb-6">
               {currentQ.question}
             </h2>
 
@@ -445,7 +451,7 @@ const CareerQuiz = () => {
                 <button
                   key={index}
                   onClick={() => handleAnswer(currentQ.id, index)}
-                  className={`w-full p-4 text-left rounded-lg border-2 transition-all duration-200 ${
+                  className={`w-full p-3 sm:p-4 text-left rounded-lg border-2 transition-all duration-200 ${
                     selectedAnswerIndex === index
                       ? selectedQuiz === "tech"
                         ? "border-blue-500 bg-blue-50 text-blue-800"
@@ -467,30 +473,32 @@ const CareerQuiz = () => {
                         <div className="w-2 h-2 bg-white rounded-full" />
                       )}
                     </div>
-                    <span className="font-medium">{option.text}</span>
+                    <span className="font-medium text-sm sm:text-base">
+                      {option.text}
+                    </span>
                   </div>
                 </button>
               ))}
             </div>
           </div>
 
-          <div className="flex justify-between">
+          <div className="flex flex-col sm:flex-row justify-between space-y-3 sm:space-y-0 sm:space-x-4">
             <button
               onClick={prevQuestion}
               disabled={currentQuestion === 0}
-              className={`flex items-center px-6 py-3 rounded-lg font-semibold transition-colors ${
+              className={`flex items-center px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-semibold transition-colors text-sm sm:text-base ${
                 currentQuestion === 0
                   ? "bg-gray-100 text-gray-400 cursor-not-allowed"
                   : "bg-gray-200 text-gray-700 hover:bg-gray-300"
               }`}
             >
-              <ChevronLeft className="w-5 h-5 mr-2" />
+              <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
               Anterior
             </button>
 
             <button
               onClick={resetQuiz}
-              className="px-6 py-3 rounded-lg font-semibold bg-gray-500 text-white hover:bg-gray-600 transition-colors"
+              className="px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-semibold bg-gray-500 text-white hover:bg-gray-600 transition-colors text-sm sm:text-base"
             >
               Voltar ao Início
             </button>
@@ -498,7 +506,7 @@ const CareerQuiz = () => {
             <button
               onClick={nextQuestion}
               disabled={selectedAnswerIndex === undefined}
-              className={`flex items-center px-6 py-3 rounded-lg font-semibold transition-colors ${
+              className={`flex items-center px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-semibold transition-colors text-sm sm:text-base ${
                 selectedAnswerIndex === undefined
                   ? "bg-gray-100 text-gray-400 cursor-not-allowed"
                   : selectedQuiz === "tech"
@@ -509,7 +517,7 @@ const CareerQuiz = () => {
               {currentQuestion === currentQuestions.length - 1
                 ? "Ver Resultado"
                 : "Próxima"}
-              <ChevronRight className="w-5 h-5 ml-2" />
+              <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
             </button>
           </div>
         </div>
